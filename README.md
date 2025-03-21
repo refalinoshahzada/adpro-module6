@@ -39,7 +39,7 @@ Request: [
 
 ## Reflection Notes: Returning HTML
 
-In this part of the module, I extend the TCP server to respond towards HTTP requests with a simple HTML page named `hello.html`. The current code I am using is this:
+In this part of the tutorial, I extend the TCP server to respond towards HTTP requests with a simple HTML page named `hello.html`. The current code I am using is this:
 
 ```Rust
 use std::{
@@ -86,7 +86,7 @@ After doing this step, I can view my webpage. This is what my webpage looks like
 
 ## Reflection Notes: Validating Request and Selectively Responding
 
-What I've learned in this part of the module is differentiating responses based on request path. Other than that, it also taught us error handling and how one can return a 404 response after encountering an error. 
+What I've learned in this part of the tutorial is differentiating responses based on request path. Other than that, it also taught us error handling and how one can return a 404 response after encountering an error. 
 
 This is what my erorr page looks like:
 
@@ -132,3 +132,8 @@ fn handle_connection(mut stream: TcpStream) {
     stream.write_all(response.as_bytes()).unwrap();
 }
 ```
+
+## Reflection Notes: Simulating Slow Requests
+
+In this part of the tutorial, we were taught to think about if there are a lot of users trying to enter our website. This will surely cause some traffic and slow down the website's loading. This part of the tutorial teaches us a more efficient way of loading so that our website does not slow down as much when there are multple users trying to access it.
+
