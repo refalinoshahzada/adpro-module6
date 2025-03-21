@@ -196,3 +196,7 @@ impl Worker {
     }
 }
 ```
+
+# Reflection Notes: Bonus
+
+In this bonus, I implemented a build function in the Threadpool implementation, this allows the code to handle creations failures gracefully rather than causing a program termination. 
